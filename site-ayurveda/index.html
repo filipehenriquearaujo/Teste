@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nome da Professora · Ayurveda e Yoga</title>
+  <meta name="description" content="Aulas de yoga, consultas de Ayurveda e conteúdos para uma vida em equilíbrio.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <!-- ================= MENU ================= -->
+  <header class="topo">
+    <div class="container">
+      <a href="#inicio" class="logo">Nome<span>.</span></a>
+      <button class="botao-menu" aria-label="Abrir menu" onclick="abrirMenu()">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#trabalho">Trabalho</a></li>
+        <li><a href="#conteudos">Conteúdos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ================= CAPA ================= -->
+  <section class="capa" id="inicio">
+    <div class="container">
+      <div>
+        <span class="subtitulo">Ayurveda · Yoga · Autoconhecimento</span>
+        <h1>Equilíbrio para o <em>corpo</em>, a <em>mente</em> e a rotina</h1>
+        <p>
+          Aulas de yoga e orientação ayurvédica para você se conhecer melhor,
+          respeitar sua natureza e viver com mais leveza.
+        </p>
+        <div class="botoes">
+          <a href="#contato" class="botao">Agende uma conversa</a>
+          <a href="#conteudos" class="botao botao-claro">Ler conteúdos</a>
+        </div>
+      </div>
+      <!-- Para usar uma foto: troque o emoji por <img src="imagens/capa.jpg" alt="..."> -->
+      <div class="capa-imagem">🪷</div>
+    </div>
+  </section>
+
+  <!-- ================= SOBRE ================= -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <!-- Para usar uma foto: troque o emoji por <img src="imagens/foto.jpg" alt="Foto da professora"> -->
+      <div class="sobre-foto">🧘‍♀️</div>
+      <div>
+        <span class="subtitulo">Sobre mim</span>
+        <h2>Olá, eu sou [Nome]</h2>
+        <p>
+          [Escreva aqui um pouco da sua história: como conheceu o yoga e o Ayurveda,
+          o que te levou a ensinar e o que te move nesse caminho.]
+        </p>
+        <p>
+          Acredito que cada pessoa é única. Por isso, meu trabalho une a prática do
+          yoga com a sabedoria do Ayurveda para criar caminhos de cuidado que
+          respeitam o seu corpo, o seu ritmo e a sua história.
+        </p>
+        <ul class="formacao">
+          <li>[Formação em Ayurveda — instituição, ano]</li>
+          <li>[Formação em Yoga — escola, carga horária]</li>
+          <li>[Outros cursos ou especializações]</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TRABALHO ================= -->
+  <section id="trabalho">
+    <div class="container">
+      <span class="subtitulo">Como posso te ajudar</span>
+      <h2>Meu trabalho</h2>
+      <p class="intro-secao">
+        Encontros pensados para trazer mais presença, saúde e consciência para o dia a dia.
+      </p>
+
+      <div class="grade">
+        <div class="cartao">
+          <div class="icone">🧘</div>
+          <h3>Aulas de Yoga</h3>
+          <p>Práticas de posturas, respiração e meditação, adaptadas ao seu nível e às suas necessidades.</p>
+          <p class="detalhe">Em grupo ou individual · presencial ou online</p>
+        </div>
+
+        <div class="cartao">
+          <div class="icone">🌿</div>
+          <h3>Consulta Ayurvédica</h3>
+          <p>Avaliação da sua constituição (doshas) e orientações de alimentação, rotina e hábitos para o seu equilíbrio.</p>
+          <p class="detalhe">Online ou presencial</p>
+        </div>
+
+        <div class="cartao">
+          <div class="icone">🌅</div>
+          <h3>Vivências e Workshops</h3>
+          <p>Encontros temáticos sobre rotina ayurvédica, alimentação consciente, estações do ano e autocuidado.</p>
+          <p class="detalhe">Datas divulgadas no Instagram</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CITAÇÃO ================= -->
+  <section class="citacao">
+    <div class="container">
+      <blockquote>“Yoga é a jornada do eu, através do eu, até o eu.”</blockquote>
+      <cite>— BHAGAVAD GITA</cite>
+    </div>
+  </section>
+
+  <!-- ================= CONTEÚDOS ================= -->
+  <section class="conteudos" id="conteudos">
+    <div class="container">
+      <span class="subtitulo">Para ler e praticar</span>
+      <h2>Conteúdos</h2>
+      <p class="intro-secao">
+        Textos, dicas e práticas simples para trazer o Ayurveda e o yoga para a sua vida.
+      </p>
+
+      <div class="grade">
+        <!-- Cada novo conteúdo é um cartão como este. Copie, cole e troque o texto e o link. -->
+        <a href="artigos/rotina-matinal.html" class="cartao artigo-cartao">
+          <div class="capa-artigo cor-1">☀️</div>
+          <div class="corpo">
+            <span class="etiqueta">Ayurveda</span>
+            <h3>Dinacharya: uma rotina matinal ayurvédica</h3>
+            <p>Pequenos hábitos ao acordar que ajudam a começar o dia com mais clareza e disposição.</p>
+            <span class="ler-mais">Ler artigo →</span>
+          </div>
+        </a>
+
+        <div class="cartao artigo-cartao">
+          <div class="capa-artigo cor-2">🌬️</div>
+          <div class="corpo">
+            <span class="etiqueta">Yoga</span>
+            <h3>Respiração para acalmar a mente</h3>
+            <p>Uma prática simples de respiração (pranayama) para momentos de ansiedade ou antes de dormir.</p>
+            <span class="ler-mais">Em breve</span>
+          </div>
+        </div>
+
+        <div class="cartao artigo-cartao">
+          <div class="capa-artigo cor-3">🔥</div>
+          <div class="corpo">
+            <span class="etiqueta">Ayurveda</span>
+            <h3>Vata, Pitta e Kapha: conheça os doshas</h3>
+            <p>Uma introdução aos três doshas e como eles se manifestam no corpo e no comportamento.</p>
+            <span class="ler-mais">Em breve</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="contato-info">
+        <span class="subtitulo">Vamos conversar</span>
+        <h2>Contato</h2>
+        <p>
+          Quer agendar uma aula, uma consulta ou tirar uma dúvida?
+          Mande uma mensagem e eu respondo assim que possível.
+        </p>
+        <ul class="contato-lista">
+          <!-- Troque pelo número com DDD, só números: 55 + DDD + número -->
+          <li>💬 <a href="https://wa.me/5500000000000" target="_blank">WhatsApp</a></li>
+          <li>📸 <a href="https://instagram.com/seuperfil" target="_blank">@seuperfil</a></li>
+          <li>✉️ <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></li>
+          <li>📍 [Cidade / bairro onde atende]</li>
+        </ul>
+      </div>
+
+      <form onsubmit="enviarMensagem(event)">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" required>
+        </div>
+        <div>
+          <label for="interesse">Tenho interesse em</label>
+          <select id="interesse">
+            <option>Aulas de Yoga</option>
+            <option>Consulta Ayurvédica</option>
+            <option>Vivências e Workshops</option>
+            <option>Outro assunto</option>
+          </select>
+        </div>
+        <div>
+          <label for="texto">Mensagem</label>
+          <textarea id="texto" required></textarea>
+        </div>
+        <button type="submit" class="botao">Enviar pelo WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="rodape">
+    <div class="container">
+      <p>© 2026 [Nome] · Ayurveda e Yoga · Feito com 🧡</p>
+    </div>
+  </footer>
+
+  <script>
+    // Número do WhatsApp que recebe as mensagens do formulário (55 + DDD + número)
+    var WHATSAPP = "5500000000000";
+
+    // Abre e fecha o menu no celular
+    function abrirMenu() {
+      document.getElementById("menu").classList.toggle("aberto");
+    }
+
+    // Fecha o menu quando clica em um link
+    document.querySelectorAll(".menu a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        document.getElementById("menu").classList.remove("aberto");
+      });
+    });
+
+    // Monta a mensagem do formulário e abre o WhatsApp
+    function enviarMensagem(evento) {
+      evento.preventDefault();
+      var nome = document.getElementById("nome").value;
+      var interesse = document.getElementById("interesse").value;
+      var texto = document.getElementById("texto").value;
+
+      var mensagem = "Olá! Meu nome é " + nome + ".\n" +
+                     "Tenho interesse em: " + interesse + ".\n\n" + texto;
+
+      window.open("https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(mensagem), "_blank");
+    }
+  </script>
+</body>
+</html>
