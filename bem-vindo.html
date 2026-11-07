@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-vindo!</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      color: #1f2937;
+      padding: 16px;
+    }
+
+    .cartao {
+      background: #ffffff;
+      max-width: 520px;
+      width: 100%;
+      padding: 40px 32px;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .emoji {
+      font-size: 64px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #4f46e5;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      color: #4b5563;
+    }
+
+    button {
+      background: #4f46e5;
+      color: #ffffff;
+      border: none;
+      padding: 12px 28px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    button:hover {
+      background: #4338ca;
+      transform: scale(1.05);
+    }
+
+    #mensagem {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #06b6d4;
+      min-height: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <main class="cartao">
+    <div class="emoji">👋</div>
+    <h1>Bem-vindo!</h1>
+    <p>Que bom ter você aqui. Esta é a minha primeira página em HTML.</p>
+    <button onclick="dizerOla()">Clique aqui</button>
+    <div id="mensagem"></div>
+  </main>
+
+  <script>
+    function dizerOla() {
+      var nome = prompt("Qual é o seu nome?");
+      var mensagem = document.getElementById("mensagem");
+      if (nome) {
+        mensagem.textContent = "Olá, " + nome + "! Seja muito bem-vindo(a)! 🎉";
+      } else {
+        mensagem.textContent = "Olá! Seja muito bem-vindo(a)! 🎉";
+      }
+    }
+  </script>
+</body>
+</html>
