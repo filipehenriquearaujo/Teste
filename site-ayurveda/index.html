@@ -126,7 +126,7 @@
 
       <div class="grade">
         <!-- Cada novo conteúdo é um cartão como este. Copie, cole e troque o texto e o link. -->
-        <a href="artigos/rotina-matinal.html" class="cartao artigo-cartao">
+        <a href="artigos/rotina-matinal/" class="cartao artigo-cartao">
           <div class="capa-artigo cor-1">☀️</div>
           <div class="corpo">
             <span class="etiqueta">Ayurveda</span>
@@ -212,18 +212,6 @@
     // Número do WhatsApp que recebe as mensagens do formulário (55 + DDD + número)
     var WHATSAPP = "5500000000000";
 
-    // Abre e fecha o menu no celular
-    function abrirMenu() {
-      document.getElementById("menu").classList.toggle("aberto");
-    }
-
-    // Fecha o menu quando clica em um link
-    document.querySelectorAll(".menu a").forEach(function (link) {
-      link.addEventListener("click", function () {
-        document.getElementById("menu").classList.remove("aberto");
-      });
-    });
-
     // Monta a mensagem do formulário e abre o WhatsApp
     function enviarMensagem(evento) {
       evento.preventDefault();
@@ -237,5 +225,6 @@
       window.open("https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(mensagem), "_blank");
     }
   </script>
+  <script src="js/menu.js"></script>
 </body>
 </html>
